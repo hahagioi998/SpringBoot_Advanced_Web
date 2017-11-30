@@ -1,0 +1,25 @@
+#server:
+#  port: 8080
+#  context-path: /girl
+#cupSize: B
+#age: 18
+##在配置里面使用配置文件
+#content: "cupSize:${cupSize},age:${age}"
+
+#把配置文件写在一个类里面
+#girl:
+#  cupSize: C
+#  age: 20
+
+spring:
+  profiles:
+    active: prod
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/dbgirl
+      username: root
+      password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

@@ -1,0 +1,12 @@
+server:
+  port: 8081
+  context-path: /girl
+cupSize: B
+age: 18
+#在配置里面使用配置文件
+content: "cupSize:${cupSize},age:${age}"
+
+#把配置文件写在一个类里面
+girl:
+  cupSize: F
+  age: 20
